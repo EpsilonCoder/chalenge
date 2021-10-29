@@ -1,0 +1,49 @@
+body{
+	padding: 0;
+	margin: 0;
+	width:100vw;
+	height: 100vh;
+	background:linear-gradient(#955d05,#533506,#533506,#cec6b9,#64420b,#65625d,#533506);
+	overflow-y:hidden;
+	overflow-x: hidden;
+}
+
+#arabedate {
+	border:5px solid #e3ab14;	
+	width:800px;
+	max-width:80%;
+	border-radius: 5px;
+	padding:20px;
+	margin:20px 0;
+
+}
+
+.btn{
+	background-color:#524e4e;
+	color: yellow;
+	border:5px solid #e3ab14;
+	border-radius:20px;
+	margin: 20px 30px;
+    
+}
+svg{
+	position:relative;
+	left:30%;
+}
+h1{
+	position:relative;
+	left:70%;
+	bottom:300px;
+	font-size:70px;
+}
+
+@media (max-width:600px){
+ h1{
+	position:relative;
+	left:58%;
+	bottom:300px;
+	font-size:70px;
+}
+
+
+}
