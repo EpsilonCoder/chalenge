@@ -8,7 +8,7 @@ body{
 	overflow-x: hidden;
 }
 
-#arabedate {
+#francaisdate {
 	border:5px solid #e3ab14;	
 	width:800px;
 	max-width:80%;
@@ -27,21 +27,48 @@ body{
     
 }
 svg{
-	position:relative;
+	
+	position: relative;
 	left:30%;
+    transform: translate (-50%, -50%) rotate (-90deg);
 }
+svg circle {
+    fill: transparent;
+    stroke:#e3ab14;
+    stroke-width: 10;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke-linecap: round;
+    animation: stroke 60s steps(500,start) forwards;
+}
+
+@keyframes animate {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -5000px;
+    }
+}
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
 h1{
 	position:relative;
-	left:70%;
-	bottom:300px;
+	left:68%;
+	bottom:70vh;
 	font-size:70px;
 }
+
 
 @media (max-width:600px){
  h1{
 	position:relative;
 	left:58%;
-	bottom:300px;
+	bottom:400px;
 	font-size:70px;
 }
 
